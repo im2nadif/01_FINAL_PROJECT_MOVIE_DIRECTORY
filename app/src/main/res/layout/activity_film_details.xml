@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru_tua"
+    tools:context=".FilmDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lay_cover_height"
+                tools:layout_editor_absoluteX="-55dp">
+
+                <ImageView
+                    android:id="@+id/cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cover_height"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/title"
+                    android:focusable="false"
+                    android:maxWidth="@dimen/max_cover"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cover" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_cover">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/poster"
+                            android:layout_width="@dimen/poster_width"
+                            android:layout_height="@dimen/poster_height"
+                            android:layout_marginStart="@dimen/poster_mstsart"
+                            android:layout_marginTop="@dimen/poster_mtop"
+                            android:contentDescription="@string/title"
+                            android:src="@drawable/poster" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/linbox_se"
+                        android:layout_marginTop="@dimen/linbox_mt"
+                        android:layout_marginEnd="@dimen/linbox_se"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/judulFilm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/raleway"
+                            android:lineSpacingExtra="@dimen/judul_linespace"
+                            android:text="@string/title"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/teks_xl" />
+
+                        <TextView
+                            android:id="@+id/tanggalRilis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_date_top"
+                            android:layout_marginBottom="@dimen/margin_date_bottom"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="@string/date"
+                            android:textColor="@color/abu_abu"
+                            android:textSize="@dimen/teks_sm" />
+
+                        <TextView
+                            android:id="@+id/jumlahViews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ralewaymedium"
+                            android:text="@string/views"
+                            android:textColor="@color/abu_abu"
+                            android:textSize="@dimen/teks_sm" />
+
+                        <ProgressBar
+                            android:id="@+id/popularitas"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/progressbar_mt"
+                            android:layout_weight="1"
+                            android:max="3000000"
+                            android:scaleY="5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_box"
+                        android:layout_marginTop="@dimen/margin_box"
+                        android:layout_marginEnd="@dimen/margin_box"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@+id/rateBintang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:progressBackgroundTint="@color/kuning_tua"
+                            android:scaleX="0.55"
+                            android:scaleY="0.55"
+                            android:theme="@style/RatingBar"
+                            android:transformPivotY="@dimen/ratbar_pivot" />
+
+                        <TextView
+                            android:id="@+id/ratingAngka"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginStart="@dimen/ratang_start"
+                            android:layout_marginTop="@dimen/ratang_mt"
+                            android:fontFamily="@font/rubik"
+                            android:text="@string/rated"
+                            android:textColor="@color/kuning"
+                            android:textSize="@dimen/teks_xxl" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginStart="@dimen/ratang_ms"
+                            android:fontFamily="@font/rubik"
+                            android:text="@string/rate"
+                            android:textColor="@color/abu_abu"
+                            android:textSize="@dimen/teks_xs" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/laybox_ms"
+                        android:layout_marginTop="@dimen/laybox_mt"
+                        android:layout_marginEnd="@dimen/laybox_me"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/jumlahVote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vote_mt"
+                            android:fontFamily="@font/rubiklight"
+                            android:text="@string/vote"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/teks_md" />
+
+                        <TextView
+                            android:id="@+id/deskripsiFilm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/desc_mt"
+                            android:fontFamily="@font/rubiklight"
+                            android:letterSpacing="0.05"
+                            android:lineSpacingExtra="@dimen/desc_linespace"
+                            android:text="@string/description"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/teks_sm" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

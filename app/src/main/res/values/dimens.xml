@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="teks_xxl">31sp</dimen>
+    <dimen name="teks_xl">24sp</dimen>
+    <dimen name="teks_lg">22sp</dimen>
+    <dimen name="teks_md">18sp</dimen>
+    <dimen name="teks_sm">14sp</dimen>
+    <dimen name="teks_xs">12sp</dimen>
+    <dimen name="teks_xxs">10sp</dimen>
+
+
+    <dimen name="zero">0dp</dimen>
+
+    <dimen name="lay_cover_height">443dp</dimen>
+    <dimen name="cover_height">275dp</dimen>
+    <dimen name="max_cover">50dp</dimen>
+
+    <dimen name="poster_height">189dp</dimen>
+    <dimen name="poster_width">126dp</dimen>
+    <dimen name="poster_mstsart">20dp</dimen>
+    <dimen name="poster_mtop">81dp</dimen>
+
+    <dimen name="linbox_se">20dp</dimen>
+    <dimen name="linbox_mt">10dp</dimen>
+
+    <dimen name="judul_linespace">7dp</dimen>
+    <dimen name="margin_date_top">10dp</dimen>
+    <dimen name="margin_date_bottom">5dp</dimen>
+
+    <dimen name="progressbar_mt">15dp</dimen>
+    <dimen name="margin_box">20dp</dimen>
+    <dimen name="ratbar_pivot">9dp</dimen>
+    <dimen name="ratang_start">-95dp</dimen>
+    <dimen name="ratang_mt">2dp</dimen>
+    <dimen name="ratang_ms">5dp</dimen>
+
+    <dimen name="laybox_ms">20dp</dimen>
+    <dimen name="laybox_mt">-40dp</dimen>
+    <dimen name="laybox_me">20dp</dimen>
+    <dimen name="vote_mt">30dp</dimen>
+    <dimen name="desc_mt">15dp</dimen>
+    <dimen name="desc_linespace">5dp</dimen>
+
+    <dimen name="profPage_w">135dp</dimen>
+    <dimen name="name_profile">30dp</dimen>
+    <dimen name="nim_profile_mt">3dp</dimen>
+    <dimen name="button_width_profile">140dp</dimen>
+    <dimen name="button_mr_profile">42dp</dimen>
+    <dimen name="button_pd_profile">10dp</dimen>
+    <dimen name="button_lay_mt">28dp</dimen>
+    <dimen name="button_lay_width">28dp</dimen>
+    <dimen name="button_pad">10dp</dimen>
+    <dimen name="kampus_text">40dp</dimen>
+    <dimen name="lay_mt">80dp</dimen>
+    <dimen name="line_space">8dp</dimen>
+
+    <dimen name="lay_margin">15dp</dimen>
+    <dimen name="lay_margin_t">-20dp</dimen>
+    <dimen name="lay_margin_b">19dp</dimen>
+    <dimen name="text_margin_b">7dp</dimen>
+    <dimen name="padding_sm">13dp</dimen>
+    <dimen name="padding_md">15dp</dimen>
+    <dimen name="padding_lg">21dp</dimen>
+    <dimen name="margin_sm">13dp</dimen>
+    <dimen name="margin_md">15dp</dimen>
+    <dimen name="margin_lg">21dp</dimen>
+    <dimen name="poster_p">156dp</dimen>
+    <dimen name="poster_l">124dp</dimen>
+
+
+</resources>

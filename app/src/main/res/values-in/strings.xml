@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Direktori Film</string>
+        <string name="title">Judul</string>
+        <string name="poster">Poster</string>
+        <string name="date">Tanggal Rilis : </string>
+        <string name="description">Deskripsi :  </string>
+        <string name="rated">0.0</string>
+        <string name="failure_connect">Tidak dapat terhubung ke server</string>
+
+        <string name="vote">suara</string>
+        <string name="rate">/10</string>
+        <string name="views">penonton</string>
+
+        <string name="kontak">Telepon</string>
+        <string name="email">Surel</string>
+        <string name="nama">Ilham Mafani Nadif</string>
+        <string name="nim">21.21.1544</string>
+        <string name="kampus">Universitas Amikom \nYogyakarta</string>
+</resources>

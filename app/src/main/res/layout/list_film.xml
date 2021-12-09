@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/biru_tua"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/lay_margin"
+            android:layout_marginTop="@dimen/lay_margin"
+            android:layout_marginEnd="@dimen/lay_margin"
+            android:layout_marginBottom="@dimen/lay_margin"
+            android:background="@drawable/layout_round"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/posterFilm"
+                android:layout_width="@dimen/poster_l"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="@dimen/lay_margin"
+                android:layout_marginTop="@dimen/lay_margin_t"
+                android:layout_marginBottom="@dimen/lay_margin"
+                android:contentDescription="@string/poster"
+                android:src="@drawable/poster" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/margin_lg"
+                android:layout_marginTop="@dimen/lay_margin"
+                android:layout_marginEnd="@dimen/lay_margin"
+                android:layout_marginBottom="@dimen/lay_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/judulFilm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_md"
+                    android:fontFamily="@font/raleway"
+                    android:text="@string/title"
+                    android:textColor="@color/putih"
+                    android:textSize="@dimen/teks_md" />
+
+                <TextView
+                    android:id="@+id/tanggalRilis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/text_margin_b"
+                    android:fontFamily="@font/rubik"
+                    android:text="@string/date"
+                    android:textColor="@color/abu_abu"
+                    android:textSize="@dimen/teks_xxs" />
+
+                <TextView
+                    android:id="@+id/deskripsiSingkat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/lay_margin_b"
+                    android:fontFamily="@font/rubik"
+                    android:maxLines="2"
+                    android:text="@string/description"
+                    android:textColor="@color/abu_abu"
+                    android:textSize="@dimen/teks_xxs" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/RatingAngka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin_sm"
+                        android:fontFamily="@font/rubik"
+                        android:text="@string/rated"
+                        android:textColor="@color/kuning"
+                        android:textSize="@dimen/teks_lg" />
+
+                    <RatingBar
+                        android:id="@+id/RatingBintang"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numStars="5"
+                        android:progressBackgroundTint="#ffff"
+                        android:theme="@style/RatingBar" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

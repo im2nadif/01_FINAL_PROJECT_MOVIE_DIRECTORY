@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Movie Directory</string>
+
+    <string name="title">Title</string>
+    <string name="poster">Poster</string>
+    <string name="date">Release Date : </string>
+    <string name="description">Description :  </string>
+    <string name="rated">0.0</string>
+    <string name="failure_connect">Cannot reach the server</string>
+
+    <string name="vote">vote</string>
+    <string name="rate">/10</string>
+    <string name="views">views</string>
+
+    <string name="kontak">Call</string>
+    <string name="email">Email</string>
+    <string name="nama">Ilham Mafani Nadif</string>
+    <string name="nim">21.21.1544</string>
+    <string name="kampus">Universitas Amikom \nYogyakarta</string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/nama"
+            android:src="@drawable/cprofile" />
+
+        <LinearLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_profile">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profilePage"
+                    android:layout_width="@dimen/profPage_w"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lay_mt"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/nama" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/name_profile"
+                    android:fontFamily="@font/raleway"
+                    android:text="@string/nama"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/teks_xl" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/nim_profile_mt"
+                    android:fontFamily="@font/ralewaymedium"
+                    android:text="@string/nim"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/teks_lg" />
+
+                <Button
+                    android:id="@+id/tel"
+                    android:layout_width="@dimen/button_width_profile"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/button_mr_profile"
+                    android:background="@drawable/button_kuning"
+                    android:drawableStart="@drawable/call_ic"
+                    android:drawableTint="@color/biru_tua"
+                    android:fontFamily="@font/rubik"
+                    android:padding="@dimen/button_pd_profile"
+                    android:text="@string/kontak"
+                    android:textColor="@color/biru_tua"
+                    android:textSize="@dimen/teks_md" />
+
+                <Button
+                    android:id="@+id/email"
+                    android:layout_width="@dimen/button_width_profile"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/button_lay_mt"
+                    android:background="@drawable/button_kuning"
+                    android:drawableStart="@drawable/ic_baseline_email_24"
+                    android:drawableTint="@color/biru_tua"
+                    android:fontFamily="@font/rubik"
+                    android:padding="@dimen/button_pad"
+                    android:text="@string/email"
+                    android:textColor="@color/biru_tua"
+                    android:textSize="@dimen/teks_md"
+                    android:tint="@color/biru_tua" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/kampus_text"
+                    android:fontFamily="@font/ralewaymedium"
+                    android:lineSpacingExtra="@dimen/line_space"
+                    android:lines="2"
+                    android:text="@string/kampus"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/teks_md" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
